@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <Home />
+        <main>
+          <Home />
+        </main>
         <SideBar />
       </div>
     </div>

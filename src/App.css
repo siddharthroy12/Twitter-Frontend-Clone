@@ -7,55 +7,8 @@
     width: 1200px;
 }
 
-header {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid gray;
-}
-
-header > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-logo {
-    padding: 1rem;
-}
-
-header nav li {
-    padding: 0.8rem;
-    list-style: none;
-}
-
-header nav li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-tweet-button {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #1C9DED;
-    border-radius: 50px;
-    color: white;
-    border: none;
-}
-
-.header-tweet-button:hover {
-    background-color: #1A91DA;
-    transition: background-color 1000ms linear;
-}
-
 .Screen {
     width: 250px;
-}
-
-.Home {
-    margin-left: 250px;
-    width: 600px;
 }
 
 .title {
@@ -76,13 +29,4 @@ header nav li a {
 
 .title-icon {
     padding: 1rem;
-}
-
-.SideBar {
-    border-left: 1px solid gray;
-    position: absolute;
-    margin-left: 850px;
-    height: 100vh;
-    scroll-behavior: unset;
-    width: 350px;
 }

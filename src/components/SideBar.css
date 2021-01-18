@@ -1,0 +1,8 @@
+.SideBar {
+    border-left: 1px solid gray;
+    position: absolute;
+    margin-left: 850px;
+    height: 100vh;
+    scroll-behavior: unset;
+    width: 350px;
+}

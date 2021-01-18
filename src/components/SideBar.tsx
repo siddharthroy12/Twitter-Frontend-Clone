@@ -1,3 +1,5 @@
+import './SideBar.css'
+
 const SideBar = () => {
     return (
         <div className="SideBar">
