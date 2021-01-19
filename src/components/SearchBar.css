@@ -1,0 +1,25 @@
+.searchBar {
+    padding: 0rem 1rem;
+    background-color: #253341;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.selected {
+    border: solid 1px #1DA1F2;
+}
+
+.searchBar input {
+    background-color: #253341;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100%;
+}
+
+.SideBar input:focus {
+    border:none;
+    outline:none;
+}

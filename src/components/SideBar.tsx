@@ -1,11 +1,11 @@
+import SearchBar from './SearchBar'
 import './SideBar.css'
 
 const SideBar = () => {
+    
     return (
         <div className="SideBar">
-            <div className="searchBar">
-                <input type="text" placeholder="Search Twitter"></input>
-            </div>
+            <SearchBar />
         </div>
     )
 }

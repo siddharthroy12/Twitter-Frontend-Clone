@@ -4,7 +4,7 @@ header {
     position: fixed;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid gray;
+    border-right: 1px solid #38444D;
 }
 
 header > div {
@@ -14,16 +14,44 @@ header > div {
 
 .header-logo {
     padding: 1rem;
+    color: white;
+}
+
+.header-logo svg {
+    width: 30px;
+    height: 30px;
 }
 
 header nav li {
-    padding: 0.8rem;
     list-style: none;
 }
 
 header nav li a {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0.7rem 1.2rem;
+    width: min-content;
+    border-radius: 50px;
+}
+
+header nav li a:hover {
+    background-color: #162D40;
+    color: #1DA1F2;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+header nav li a svg {
+    height: 25px;
+    width: 25px;
+}
+
+header nav li p {
+    margin: 0;
 }
 
 .header-tweet-button {
@@ -33,9 +61,14 @@ header nav li a {
     border-radius: 50px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .header-tweet-button:hover {
     background-color: #1A91DA;
     transition: background-color 1000ms linear;
+}
+
+.header-tweet-button:focus {
+    outline: none;
 }
