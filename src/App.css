@@ -38,3 +38,12 @@
 .title-icon:hover{
     background-color: #162D40;
 }
+
+.border-bottom {
+    border-bottom: 1px solid #38444D;
+}
+
+.hover-background:hover {
+    background-color: #162D40;
+    transition: color 0.5s, background-color 0.5s;
+}
