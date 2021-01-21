@@ -84,6 +84,7 @@ header nav li p {
     padding: 0.5rem 0.5rem;
     justify-self: flex-end;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .header-profile-menu:hover {
