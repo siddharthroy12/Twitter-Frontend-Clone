@@ -15,9 +15,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #38444D;
+    border-left: 1px solid #38444D;
     padding: 0.4rem;
     box-sizing: border-box;
     height: 50px;
+    background-color: #15202B;
 }
 
 .title h1 {

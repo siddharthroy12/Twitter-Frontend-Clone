@@ -1,10 +1,10 @@
+import Tweet from '../components/Tweet'
 import StarIcon from '../components/icons/StarIcon'
 import ImageIcon from '../components/icons/ImageIcon'
 import PlayBtnIcon from '../components/icons/PlayBtnIcon'
 import BarChartIcon from '../components/icons/BarChartIcon'
 import SmileIcon from '../components/icons/SmileIcon'
 import CalenderRangeIcon from '../components/icons/CalenderRangeIcon'
-
 import './Home.css'
 
 const Home = () => {
@@ -47,6 +47,7 @@ const Home = () => {
             </div>
             <div className="Spacer">
             </div>
+            <Tweet />
         </div>
     )
 }

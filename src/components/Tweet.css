@@ -1,0 +1,113 @@
+.Tweet {
+    display: flex;
+    padding: 1.2rem;
+    border-bottom: 1px solid #38444D;
+    gap: 10px;
+    padding-bottom: 0;
+}
+
+.Tweet:hover {
+    background-color: #1C2732;
+    transition: background-color 0.5s;
+}
+
+.tweet-profile-pic img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.tweet-data {
+    width: 100%;
+}
+
+.tweet-title {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.tweet-user-name {
+    font-weight: 500;
+}
+
+.tweet-user-username, .tweet-posted-at, .tweet-title span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+}
+
+.tweet-options {
+    margin-left: auto;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+
+.tweet-options:hover {
+    color: #1DA1F2;
+}
+
+.tweet-options svg {
+    width: 20px;
+    height: 20px;
+}
+
+.tweet-content {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.tweet-controls {
+    display: flex;
+    gap: 80px;
+}
+
+.tweet-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(136, 153, 166);
+}
+
+.tweet-control:hover {
+    color: #1A91DA;
+    transition: color 0.5s;
+}
+
+.tweet-control-green:hover {
+    color: #17AD5D;
+}
+
+.tweet-control-red:hover {
+    color: #DD235D;
+}
+
+.tweet-control > div {
+    padding: 0.5rem;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-control:hover > div {
+    color: #1A91DA;
+    background-color: #162D40;;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.tweet-control-green:hover > div {
+    color: #17AD5D;
+    background-color: #1B3737;
+}
+
+.tweet-control-red:hover > div {
+    color: #DD235D;
+    background-color: #302636;
+}
