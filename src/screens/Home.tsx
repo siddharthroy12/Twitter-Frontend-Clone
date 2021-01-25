@@ -7,6 +7,31 @@ import SmileIcon from '../components/icons/SmileIcon'
 import CalenderRangeIcon from '../components/icons/CalenderRangeIcon'
 import './Home.css'
 
+const fake_tweets = [
+    {
+        userName: "Siddharth Roy",
+        username: "Siddharth_Roy12",
+        profilePic: "/img/profilepic.jpg",
+        content: "Bruh",
+        img: "https://pbs.twimg.com/media/EsjoHFjVkAAQ53y?format=png&name=small",
+        comments: 43,
+        retweets: 2312,
+        likes: 23,
+        postedAt: '12h'
+    },
+    {
+        userName: "Siddharth Roy",
+        username: "Siddharth_Roy12",
+        profilePic: "/img/profilepic.jpg",
+        content: "Bruh",
+        img: "https://pbs.twimg.com/media/EsjoHFjVkAAQ53y?format=png&name=small",
+        comments: 43,
+        retweets: 2312,
+        likes: 23,
+        postedAt: '12h'
+    }
+]
+
 const Home = () => {
     return (
         <div className="Home">
@@ -18,7 +43,7 @@ const Home = () => {
             </div>
             <div className="new-tweet-form">
                 <div className="tweet-form-pf-pic">
-                    <img src="https://pbs.twimg.com/profile_images/1347182038084849665/pCz-T1Ze_400x400.jpg"
+                    <img src="/img/profilepic.jpg"
                         alt="Profile Pic"/>
                 </div>
                 <div className="tweet-form">
@@ -47,7 +72,11 @@ const Home = () => {
             </div>
             <div className="Spacer">
             </div>
-            <Tweet />
+            {
+                fake_tweets.map(tweet => (
+                    <Tweet tweet={tweet} />
+                ))
+            }
         </div>
     )
 }

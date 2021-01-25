@@ -5,6 +5,7 @@
     gap: 10px;
     padding-bottom: 0;
     cursor: pointer;
+    border-right: 1px solid #38444D;
 }
 
 .Tweet:hover {
@@ -72,6 +73,9 @@
 .tweet-menu-item {
     padding: 0.9rem 1rem;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .tweet-menu-item:hover {
@@ -82,6 +86,17 @@
 .tweet-content {
     margin: 0;
     margin-bottom: 4px;
+}
+
+.tweet-image {
+    margin-top: 10px;
+}
+
+.tweet-image img {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .tweet-controls {

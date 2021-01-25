@@ -20,6 +20,7 @@
     box-sizing: border-box;
     height: 50px;
     background-color: #15202B;
+    border-right: 1px solid #38444D;
 }
 
 .title h1 {
@@ -51,4 +52,5 @@
     padding: 0.2rem;
     border-bottom: 1px solid #38444D;
     background-color: #192734;
+    border-right: 1px solid #38444D;
 }

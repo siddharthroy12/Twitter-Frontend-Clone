@@ -5,28 +5,49 @@ import ChatIcon from './icons/ChatIcon'
 import RepeatIcon from './icons/RepeatIcon'
 import HeartIcon from './icons/HeartIcon'
 import UploadIcon from './icons/UploadIcon'
+import SadIcon from './icons/SadIcon'
+import UnfollowIcon from './icons/UnfollowIcon'
+import MuteIcon from './icons/MuteIcon'
+import ListIcon from './icons/ListIcon'
+import BlockIcon from './icons/BlockIcon'
+import CodeIcon from './icons/CodeIcon'
+import FlagIcon from './icons/FlagIcon'
+
 import './Tweet.css'
 
+type TweetProps = {
+    tweet: {
+        userName: string,
+        username: string,
+        profilePic: string,
+        content: string,
+        img: string,
+        comments: number,
+        retweets: number,
+        likes: number,
+        postedAt: string,
+    }
+}
 
-const Tweet = () => {
+const Tweet = ({ tweet }:TweetProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
         <div className="Tweet">
             <div className="tweet-profile-pic">
-                <img src="https://pbs.twimg.com/profile_images/1347182038084849665/pCz-T1Ze_400x400.jpg"
+                <img src={tweet.profilePic}
                     alt="Profile Pic"/>
             </div>
             <div className="tweet-data">
                 <div className="tweet-title">
                     <div className="tweet-user-name">
-                        SiddharthRoy
+                        {tweet.userName}
                     </div>
                     <div className="tweet-user-username">
-                        @Siddharth_Roy12
+                        @{tweet.username}
                     </div>
                     <span>·</span>
                     <div className="tweet-posted-at">
-                        12h
+                        {tweet.postedAt}
                     </div>
                     <div className="tweet-options hover-background" onClick={e => setIsMenuOpen(!isMenuOpen)}>
                         <ThreeDotsIcon />
@@ -36,51 +57,51 @@ const Tweet = () => {
                 {isMenuOpen && (
                         <div className="tweet-menu">
                             <div className="tweet-menu-item">
-                                Not interested in this tweet
+                                <SadIcon /> Not interested in this tweet
                             </div>
                             <div className="tweet-menu-item">
-                                Unfollow
+                                <UnfollowIcon /> Unfollow
                             </div>
                             <div className="tweet-menu-item">
-                                Add/Remove from Lists
+                                <ListIcon /> Add/Remove from Lists
                             </div>
                             <div className="tweet-menu-item">
-                                Mute
+                                <MuteIcon /> Mute
                             </div>
                             <div className="tweet-menu-item">
-                                Mute this conversation
+                                <BlockIcon /> Block
                             </div>
                             <div className="tweet-menu-item">
-                                Block
+                                <CodeIcon /> Embed Tweet
                             </div>
                             <div className="tweet-menu-item">
-                                Embed Tweet
-                            </div>
-                            <div className="tweet-menu-item">
-                                Report Tweet
+                                <FlagIcon /> Report Tweet
                             </div>
                         </div>
                     )}
                 </div>
-                <p className="tweet-content">Hello</p>
+                <p className="tweet-content">{tweet.content}</p>
+                <div className="tweet-image">
+                    <img src={tweet.img} />
+                </div>
                 <div className="tweet-controls">
                     <div className="tweet-control">
                         <div>
                             <ChatIcon />
                         </div>
-                        <span>2</span>
+                        <span>{tweet.comments}</span>
                     </div>
                     <div className="tweet-control tweet-control-green">
                         <div>
                             <RepeatIcon />
                         </div>
-                        <span>2</span>
+                        <span>{tweet.retweets}</span>
                     </div>
                     <div className="tweet-control tweet-control-red">
                         <div>
                             <HeartIcon />
                         </div>
-                        <span>25</span>
+                        <span>{tweet.likes}</span>
                     </div>
                     <div className="tweet-control">
                         <div>

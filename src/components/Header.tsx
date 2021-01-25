@@ -80,7 +80,7 @@ const Header = () => {
                 profileMenuShown ? 'header-profile-menu-active header-profile-menu'
                 : 'header-profile-menu'
                 } onClick={e => setProfileMenuShown(!profileMenuShown)}>
-                <img src="https://pbs.twimg.com/profile_images/1347182038084849665/pCz-T1Ze_400x400.jpg" alt="Profile Pic"/>
+                <img src="/img/profilepic.jpg" alt="Profile Pic"/>
                 <div>
                     <h3>Siddharth Roy</h3>
                     <h5>@Siddharth_Roy12</h5>
@@ -89,7 +89,7 @@ const Header = () => {
                 {profileMenuShown && (
                     <div className="header-profile-menu-card">
                     <div className="border-bottom">
-                        <img src="https://pbs.twimg.com/profile_images/1347182038084849665/pCz-T1Ze_400x400.jpg" alt="Profile Pic"/>
+                        <img src="/img/profilepic.jpg" alt="Profile Pic"/>
                         <div>
                             <h3>Siddharth Roy</h3>
                             <h5>@Siddharth_Roy12</h5>
