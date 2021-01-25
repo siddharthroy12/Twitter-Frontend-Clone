@@ -1,6 +1,7 @@
 .SidebarCard {
     background-color: #192734;
     border-radius: 16px;
+    margin-bottom: 20px;
 }
 
 .sidebar-card-title {
@@ -29,7 +30,7 @@
     cursor: pointer;
 }
 
-.sidebar-card-news:hover, .sidebar-card-bottom:hover {
+.sidebar-card-news:hover, .sidebar-card-bottom:hover, .sidebar-card-profile:hover {
     background-color: #202E3A;
     transition: color 0.5s, background-color 0.5s;
 }
@@ -43,4 +44,39 @@
 
 .sidebar-card-news h4 {
     margin: 10px 0;
+}
+
+.sidebar-card-profile {
+    list-style: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+.sidebar-card-profile a {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-card-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.sidebar-card-profile h5, .sidebar-card-profile h4 {
+    margin: 0;
+}
+
+.sidebar-card-profile h4 {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.sidebar-card-profile h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
 }

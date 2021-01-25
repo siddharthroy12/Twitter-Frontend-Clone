@@ -22,3 +22,18 @@
     box-sizing: border-box;
     background-color: #15202B;
 }
+
+.sidebar-footer {
+    padding: 0 1rem;
+}
+
+.sidebar-footer a {
+    color: rgb(136, 153, 166);
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
