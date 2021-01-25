@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <header>
             <div className="header-logo">
-                <ChatLeftQuoteIcon />
+                <img src="/logo512.png" />
             </div>
             <div>
                 <nav>
