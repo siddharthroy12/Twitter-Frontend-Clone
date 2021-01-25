@@ -1,0 +1,46 @@
+.SidebarCard {
+    background-color: #192734;
+    border-radius: 16px;
+}
+
+.sidebar-card-title {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-stretch: semi-expanded;
+}
+
+.sidebar-card-bottom {
+    padding: 0.8rem 1rem;
+    color: #1DA1F2;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.sidebar-card-news-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-card-news {
+    list-style: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+
+.sidebar-card-news:hover, .sidebar-card-bottom:hover {
+    background-color: #202E3A;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.sidebar-card-news h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+}
+
+.sidebar-card-news h4 {
+    margin: 10px 0;
+}

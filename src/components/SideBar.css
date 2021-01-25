@@ -4,7 +4,21 @@
     height: 100vh;
     scroll-behavior: unset;
     width: 350px;
-    padding: 0.5rem 1.5rem;
     box-sizing: border-box;
     top: 0;
+}
+
+.sidebar-container {
+    padding: 0.5rem 1.5rem;
+}
+
+.sidebar-content {
+    padding-top: 60px;
+}
+
+.sidebar-title {
+    position: fixed;
+    width: inherit;
+    box-sizing: border-box;
+    background-color: #15202B;
 }
