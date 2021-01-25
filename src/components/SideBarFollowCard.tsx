@@ -8,9 +8,9 @@ const SidebarFollowCard = () => {
             </div>
             <ul className="sidebar-card-news-list">
                 <li className="sidebar-card-profile border-bottom">
-                    <a href="https://twitter.com/Siddharth_Roy12" target="_blank">
+                    <a href="https://twitter.com/Siddharth_Roy12" target="_blank" rel="noreferrer">
                         <div>
-                            <img src="/img/profilepic.jpg" />
+                            <img src="/img/profilepic.jpg" alt="Profile Pic" />
                         </div>
                         <div>
                             <h4>Siddharth Roy</h4>

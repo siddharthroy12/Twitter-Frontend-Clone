@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ChatLeftQuoteIcon from './icons/ChatLeftQuoteIcon'
 import HomeIcon from './icons/HomeIcon'
 import HashIcon from './icons/HashIcon'
 import BellIcon from './icons/BellIcon'
@@ -19,7 +18,8 @@ const Header = () => {
     return (
         <header>
             <div className="header-logo">
-                <img src="/logo512.png" />
+                <img src="/logo512.png"
+                alt="logo"/>
             </div>
             <div>
                 <nav>

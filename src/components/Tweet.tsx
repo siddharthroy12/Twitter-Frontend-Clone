@@ -82,7 +82,8 @@ const Tweet = ({ tweet }:TweetProps) => {
                 </div>
                 <p className="tweet-content">{tweet.content}</p>
                 <div className="tweet-image">
-                    <img src={tweet.img} />
+                    {/* eslint-disable-next-line */}
+                    <img src={tweet.img} alt="Tweet Image"/>
                 </div>
                 <div className="tweet-controls">
                     <div className="tweet-control">
