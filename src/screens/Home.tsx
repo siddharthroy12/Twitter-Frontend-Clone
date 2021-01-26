@@ -56,13 +56,13 @@ const Home = () => {
                             <div>
                                 <PlayBtnIcon />
                             </div>
-                            <div>
+                            <div className="poll-icon">
                                 <BarChartIcon />
                             </div>
                             <div>
                                 <SmileIcon />
                             </div>
-                            <div>
+                            <div className="event-icon">
                                 <CalenderRangeIcon />
                             </div>
                         </div>

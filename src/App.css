@@ -7,6 +7,27 @@
     width: 1200px;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        width: 1040px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        width: 690px;
+    }
+}
+
+@media (max-width: 690px) {
+    .App {
+        justify-content: flex-start;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
 .title {
     position: fixed;
     top: 0;
@@ -53,4 +74,21 @@
     border-bottom: 1px solid #38444D;
     background-color: #192734;
     border-right: 1px solid #38444D;
+}
+
+main {
+    margin-left: 250px;
+    width: 600px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 690px) {
+    main {
+        width: auto;
+    }
 }

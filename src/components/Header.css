@@ -8,6 +8,13 @@ header {
     overflow-y: auto;
 }
 
+@media (max-width: 1200px) {
+    header {
+        width: 90px;
+        align-items: center;
+    }
+}
+
 header > div {
     display: flex;
     flex-direction: column;
@@ -56,6 +63,12 @@ header nav li p {
     margin: 0;
 }
 
+@media (max-width: 1200px) {
+    header nav li p {
+        display: none;
+    }
+}
+
 .header-tweet-button {
     margin: 1rem;
     padding: 1rem;
@@ -66,6 +79,31 @@ header nav li p {
     font-weight: 900;
     cursor: pointer;
 }
+
+.header-tweet-button-plus {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #1C9DED;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-weight: 900;
+    width: 50px;
+}
+
+@media (max-width: 1200px) {
+    .header-tweet-button {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-tweet-button-plus {
+        display: none;
+    }
+}
+
+
 
 .header-tweet-button:hover {
     background-color: #1A91DA;
@@ -109,19 +147,36 @@ header nav li p {
     margin: 0;
 }
 
+@media (max-width: 1200px) {
+    .header-profile-menu {
+        width: fit-content;
+        padding: 0.5rem;
+    }
+    .header-profile-menu > div > h3, .header-profile-menu > div > h5, .header-profile-menu > svg {
+        display: none;
+    }
+}
+
 .header-profile-menu h5 {
     font-weight: 400;
     color: rgb(136, 153, 166);
 }
 
 .header-profile-menu-card {
-    position: absolute;
+    position: fixed;
     background-color: #15202B;
     margin-bottom: 250px;
-    width: 98%;
+    width: 270px;
     border-radius: 16px;
     padding-top: 1rem;
     box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+}
+
+@media (max-width: 1200px) {
+    .header-profile-menu-card {
+        display: fixed;
+        left: 1px;
+    }
 }
 
 .header-profile-menu-card > div {

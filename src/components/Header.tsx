@@ -9,6 +9,7 @@ import ListIcon from './icons/ListIcon'
 import PersonIcon from './icons/PersonIcon'
 import ThreeDotsIcon from './icons/ThreeDotsIcon'
 import CheckIcon from './icons/CheckIcon'
+import PlusIcon from './icons/PlusIcon'
 
 import './Header.css'
 
@@ -75,6 +76,9 @@ const Header = () => {
             </div>
             <button className="header-tweet-button">
                 Tweet
+            </button>
+            <button className="header-tweet-button-plus">
+                <PlusIcon />
             </button>
             <div className={
                 profileMenuShown ? 'header-profile-menu-active header-profile-menu'
