@@ -36,6 +36,7 @@
 .tweet-user-name {
     font-weight: 500;
     font-size: 0.9rem;
+    width: max-content;
 }
 
 .tweet-user-username, .tweet-posted-at, .tweet-title span {
