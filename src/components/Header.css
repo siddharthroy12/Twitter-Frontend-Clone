@@ -64,7 +64,7 @@ header nav li p {
 }
 
 @media (max-width: 1200px) {
-    header-nav li a {
+    header nav li a {
        padding: 0.9rem; 
     }
 
