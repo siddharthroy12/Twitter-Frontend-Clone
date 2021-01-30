@@ -35,7 +35,7 @@ const fake_tweets = [
 const Home = () => {
     return (
         <div className="Home">
-            <div className="title">
+            <div className="title border-bottom">
                 <h1>Home</h1>
                 <div className="title-icon">
                     <StarIcon />

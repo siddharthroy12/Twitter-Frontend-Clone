@@ -35,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #38444D;
     border-left: 1px solid #38444D;
     padding: 0.4rem;
     box-sizing: border-box;
@@ -76,6 +75,37 @@
     border-right: 1px solid #38444D;
 }
 
+.screen-switcher {
+    position: fixed;
+    width: 600px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px solid #38444D;
+    border-bottom: 1px solid #38444D;
+    box-sizing: border-box;
+}
+
+.screen-switcher-button {
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.screen-switcher-button-active {
+    border-bottom: 2px solid #1DA1F2;
+    color: #1DA1F2;
+}
+
+.screen-switcher-button:hover {
+    background-color: #162D40;
+    color: #1DA1F2;
+    transition: color 0.5s, background-color 0.5s;
+}
+
 main {
     margin-left: 250px;
     width: 600px;
@@ -88,6 +118,14 @@ main {
 }
 
 @media (max-width: 690px) {
+    .title {
+        width: 100%;
+        padding-right: 90px;
+    }
+    .screen-switcher {
+        width: 100%;
+        padding-right: 90px;
+    }
     main {
         width: auto;
     }

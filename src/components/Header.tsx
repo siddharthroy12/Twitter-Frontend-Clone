@@ -25,7 +25,7 @@ const Header = () => {
             <div>
                 <nav>
                     <li className="nav-link">
-                        <Link to=''>
+                        <Link to='/'>
                             <HomeIcon />
                             <p>Home</p>
                         </Link>
@@ -37,7 +37,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="nav-link">
-                        <Link to=''>
+                        <Link to='/notifications'>
                             <BellIcon />
                             <p>Notifications</p>
                         </Link>
