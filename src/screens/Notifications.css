@@ -1,0 +1,13 @@
+.notification-list {
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.notification-list .tweet-title {
+    margin-bottom: 20px;
+    height: unset;
+}
+
+.notification-list .Tweet {
+    padding-bottom: 1.2rem;
+}

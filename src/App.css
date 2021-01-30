@@ -83,16 +83,22 @@
     justify-content: space-evenly;
     border-right: 1px solid #38444D;
     border-bottom: 1px solid #38444D;
+    border-left: 1px solid #38444D;
     box-sizing: border-box;
+    background-color: #15202B;
 }
 
 .screen-switcher-button {
-    padding: 1.5rem;
     width: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 0.9rem;
     box-sizing: border-box;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .screen-switcher-button-active {

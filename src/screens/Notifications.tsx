@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import GearIcon from '../components/icons/GearIcon'
+import Notification from '../components/notifications/Notification'
+import './Notifications.css'
 
 export default function Notifications() {
     const [screen, setScreen] = useState('all')
@@ -23,6 +25,11 @@ export default function Notifications() {
                     onClick={() => setScreen('mentions')}>
                     Mentions
                 </div>
+            </div>
+            <div className="notification-list">
+                {screen === 'all' ? (
+                    <Notification />
+                ) : null}
             </div>
         </div>
     )

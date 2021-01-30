@@ -26,6 +26,7 @@ type TweetProps = {
         retweets: number,
         likes: number,
         postedAt: string,
+        replyingTo: string,
     }
 }
 

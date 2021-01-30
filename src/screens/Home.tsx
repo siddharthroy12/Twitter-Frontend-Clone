@@ -17,7 +17,8 @@ const fake_tweets = [
         comments: 43,
         retweets: 2312,
         likes: 23,
-        postedAt: '12h'
+        postedAt: '12h',
+        replyingTo: ''
     },
     {
         userName: "Siddharth Roy",
@@ -28,7 +29,8 @@ const fake_tweets = [
         comments: 43,
         retweets: 2312,
         likes: 23,
-        postedAt: '12h'
+        postedAt: '12h',
+        replyingTo: ''
     }
 ]
 
