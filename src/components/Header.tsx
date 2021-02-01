@@ -49,7 +49,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="nav-link">
-                        <Link to=''>
+                        <Link to='bookmarks'>
                             <BookmarkIcon />
                             <p>Bookmarks</p>
                         </Link>

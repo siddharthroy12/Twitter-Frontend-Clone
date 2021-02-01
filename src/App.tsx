@@ -5,6 +5,7 @@ import Notifications from './screens/Notifications'
 import SideBar from './components/SideBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
+import Bookmarks from './screens/Bookmarks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <main>
           <Switch>
+            <Route path='/bookmarks' component={Bookmarks}/>
             <Route path='/notifications' component={Notifications}/>
             <Route exact path='/' component={Home}/>
           </Switch>

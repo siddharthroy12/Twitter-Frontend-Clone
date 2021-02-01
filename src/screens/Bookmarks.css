@@ -1,0 +1,17 @@
+.Bookmarks {
+    height: 101vh;
+    border-right: 1px solid #38444D;
+    padding-top: 50px;
+}
+
+.Bookmarks h6 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.Bookmarks p {
+    text-align: center;
+    color: rgb(136, 153, 166);
+}
