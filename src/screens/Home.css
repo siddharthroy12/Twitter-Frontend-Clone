@@ -68,6 +68,12 @@
     width: 25px;
 }
 
+div > .tweet-form-options svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tweet-form-options div {
     border-radius: 50px;
 }

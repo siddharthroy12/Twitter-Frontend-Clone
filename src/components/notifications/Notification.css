@@ -1,6 +1,25 @@
+.Notification {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #38444D;
+    gap: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+    border-right: 1px solid #38444D;
+}
+
+.Notification:hover {
+    background-color: #1C2732;
+    transition: background-color 0.5s;
+}
+
+.Notification .tweet-title {
+    height: unset;
+}
+
 .tweet-title img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -9,4 +28,13 @@
     width: 40px;
     height: 25px;
     color: #DD235D;
+    margin-top: 5px;
+}
+
+.notification-topic, .notification-ref-text {
+    font-size: 0.9rem;
+}
+
+.notification-ref-text {
+    color: rgb(136, 153, 166);
 }

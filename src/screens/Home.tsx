@@ -30,7 +30,7 @@ const fake_tweets = [
         retweets: 2312,
         likes: 23,
         postedAt: '12h',
-        replyingTo: ''
+        replyingTo: '@SiddharthRoy'
     }
 ]
 

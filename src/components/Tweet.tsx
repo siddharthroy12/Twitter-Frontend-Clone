@@ -81,6 +81,9 @@ const Tweet = ({ tweet }:TweetProps) => {
                         </div>
                     )}
                 </div>
+                {tweet.replyingTo && (
+                    <p className="replying-to">Replying to <span>{tweet.replyingTo}</span></p>
+                )}
                 <p className="tweet-content">{tweet.content}</p>
                 <div className="tweet-image">
                     {/* eslint-disable-next-line */}

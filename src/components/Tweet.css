@@ -30,7 +30,7 @@
     width: 100%;
     align-items: center;
     height: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .tweet-user-name {
@@ -85,8 +85,18 @@
     transition: background-color 0.5s;
 }
 
+.replying-to {
+    margin: 0;
+    color:rgb(136, 153, 166);
+}
+
+.replying-to span {
+    color: #1A91DA;
+}
+
 .tweet-content {
     margin: 0;
+    margin-top: 4px;
     margin-bottom: 4px;
 }
 

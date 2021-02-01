@@ -1,37 +1,30 @@
 import HeartIcon from '../icons/HeartIcon'
 import './Notification.css'
 
-/*type TweetProps = {
-    tweet: {
+type NotificationProps = {
+    notification: {
         userName: string,
-        username: string,
         profilePic: string,
         content: string,
-        img: string,
-        comments: number,
-        retweets: number,
-        likes: number,
-        postedAt: string,
-        replyingTo: string,
     }
-}*/
+}
 
-const Notification = (/*{ tweet }:TweetProps*/) => {
+const Notification = ({ notification }:NotificationProps) => {
     return (
-        <div className="Tweet">
+        <div className="Notification">
             <div className="tweet-profile-pic">
                 <HeartIcon />
             </div>
             <div className="tweet-data">
                 <div className="tweet-title">
-                <img src="/img/profilepic.jpg"
+                <img src={notification.profilePic}
                     alt="Profile Pic"/>
                 </div>
                 <p className="notification-topic">
-                    freelancer liked your post
+                    <strong>{notification.userName}</strong> liked your post
                 </p>
                 <p className="notification-ref-text">
-                sadfsadfds
+                    {notification.content}
                 </p>
             </div>
         </div>
