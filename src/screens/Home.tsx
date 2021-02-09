@@ -21,16 +21,16 @@ const fake_tweets = [
         replyingTo: ''
     },
     {
-        userName: "Siddharth Roy",
-        username: "Siddharth_Roy12",
-        profilePic: "/img/profilepic.jpg",
-        content: "Bruh",
-        img: "https://pbs.twimg.com/media/EsjoHFjVkAAQ53y?format=png&name=small",
+        userName: "itch.io",
+        username: "itchio",
+        profilePic: "https://pbs.twimg.com/profile_images/1212846124945428480/w1htiJ0v_400x400.png",
+        content: "Check out the best game in our website. https://siddharthroy12.itch.io/rayshooter",
+        img: "https://siddharthroy.pythonanywhere.com/media/previews/screenshot_xvTU3yM.png",
         comments: 43,
-        retweets: 2312,
+        retweets: 50,
         likes: 23,
         postedAt: '12h',
-        replyingTo: '@SiddharthRoy'
+        replyingTo: ''
     }
 ]
 
